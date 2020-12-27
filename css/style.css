@@ -156,9 +156,10 @@ img.orgImg {
 
 div.myTag {
     display:inline;
-    border-radius: 15px;
+    border-radius: 10px;
     color: whitesmoke;
     background-color: grey;
+    background-size: 10px;
     padding: 3px;
     text-align: center;
     overflow-wrap:normal;
