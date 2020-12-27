@@ -1,0 +1,216 @@
+
+html * {
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; 
+}
+
+/* Main Grid for the Page */
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px auto auto auto;
+    grid-template-areas:
+      'header header header header header'
+      'menu main main main main'
+      'footer footer footer footer footer';
+    grid-gap: 0px;
+    padding: 5px;
+}
+
+.grid-container > div {
+    padding: 0px 0;
+  }
+
+.iHeader { 
+    grid-area: header; 
+    top: 0;
+    color:dimgray;
+    text-align: center;
+    position:top, left;
+}
+.iMenu { 
+    grid-area: menu;
+    position: -webkit-sticky;
+}
+.iMain { 
+    grid-area: main; 
+    margin: 20px;
+
+}
+
+.iFooter {
+    grid-area: footer; 
+    background-color:aliceblue;
+    color:gray;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+    margin:20px;
+}
+
+/* Created Tabled for the Header Section */
+table.headerTable {
+    width: 100%;
+} 
+td.leftCell {
+    width: 200px;
+    padding: 5px;
+} 
+td.middleCell {
+    width: 100%;
+} 
+td.rightCell {
+    width: 200px;
+    padding: 5px;
+} 
+
+#headerTitle { 
+    font-weight:bold;
+    font-size: 40px;
+    text-align: center;
+}
+#subTitle { 
+    font-weight: normal;
+    color:dimgray;
+    font-size: 20px;
+    text-align: center;
+}
+.dtText { 
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.hideDiv{
+    display: none;
+}
+
+.displayDiv {
+    display: contents;
+}
+
+
+/* Created Tabled for Profile Summary */
+table.mainTable {
+    width: 100%;
+    font-size: 20px;
+} 
+tr.mainRow {
+    vertical-align: middle;
+} 
+
+td.mainCell {
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Created Tabled for Org History */
+table.orgTable {
+    width: 100%;
+    padding: 10px;
+} 
+
+th.orgTableTitle {
+    text-align: center;
+}
+
+tr.orgTableHeader {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: lightgray;
+}
+tr.orgRowHeader {
+    text-align: left;
+    vertical-align: middle;
+}
+
+tr:hover {
+    background-color:#f5f5f5;
+}
+
+tr.orgRow {
+    text-align: left;
+    overflow-wrap:normal;
+    height: 40px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    color:darkgrey ;
+    display: inline;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+}
+
+img.orgImg {
+    float:right;
+    vertical-align: middle;
+    width: 90px;
+    height: 70px;
+    padding-right: 10px ;
+}
+
+div.myTag {
+    display:inline;
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: grey;
+    padding: 3px;
+    text-align: center;
+    overflow-wrap:normal;
+}
+
+
+ul.socialList {
+    list-style-type:none;
+    margin: 0px;
+    padding: 10px;
+}
+
+/* Vertical navigation Example */
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: auto;
+}
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ul.sidenav li a.active {
+    background-color:gray ;
+    color: white;
+}
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+
+
+/* To create Columns in the Main Section - Not Using it anymore 
+.flex-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.flex-container > div {
+    width: 45%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+*/
